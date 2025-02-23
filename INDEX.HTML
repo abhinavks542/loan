@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility Prediction</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Eligibility Prediction</h1>
+        <form id="loanForm">
+            <label for="income">Monthly Income ($):</label>
+            <input type="number" id="income" name="income" required>
+
+            <label for="loanAmount">Loan Amount ($):</label>
+            <input type="number" id="loanAmount" name="loanAmount" required>
+
+            <label for="creditScore">Credit Score:</label>
+            <input type="number" id="creditScore" name="creditScore" required>
+
+            <label for="employment">Employment Status:</label>
+            <select id="employment" name="employment">
+                <option value="employed">Employed</option>
+                <option value="selfEmployed">Self-Employed</option>
+                <option value="unemployed">Unemployed</option>
+            </select>
+
+            <button type="button" onclick="checkEligibility()">Check Eligibility</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="SCRIPT.JS"></script>
+</body>
+</html>
